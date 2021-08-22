@@ -1,0 +1,292 @@
+* {box-sizing:border-box}
+
+body {
+    padding: 10px;
+    font-family: 'EB Garamond', serif;
+    background-color: rgb(255, 255, 255);
+    text-transform: lowercase;
+}
+
+.resume-container {
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 720px;
+    /* padding: 1em; */
+    line-height : 20px;
+}
+
+/* ul li:before{ 
+    color: #5d2735;
+    content:"• ";
+    font-size:10pt;
+} */
+ul {
+    padding-top: 0em;
+    padding-bottom: 0.4em;
+    margin: 0;
+    /* font-size: 10pt;  */
+    list-style: none; 
+    padding-left: 15px;
+}
+ul li span {position:relative; left:-7px;}
+
+
+h1 {
+    color: rgb(22, 96, 139);
+    /* color: #a25a66; */
+    padding : 0;
+    margin-top : 0;
+    line-height : 24px;
+}
+
+.resume-container .header {
+    background-color: white;
+    text-align: center;
+    font-size: 22px;
+    /* padding: 1em; */
+    
+}
+
+.personal-info{
+    background-color: rgb(233, 233, 233);
+    flex-direction: row;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    
+}
+
+.personal-info a{
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    padding-left: 27px;
+    padding-right: 27px;
+}
+
+.resume-container .education{
+    display: flex;
+    margin: 0;
+    background-color: white;
+    color: black;
+    padding: 1em;
+}
+
+.resume-container .education .c1 {
+    flex: 3;
+}
+.resume-container .education .c2 {
+    flex: 1;
+}
+/*PROJECT section*/
+.proj-section{
+    /* display: flex; */
+    margin: 0;
+    background-color: white;
+    color: black;
+    padding: 1em;
+}
+
+.proj-info{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.proj-img{
+    object-fit: cover;
+    height: 125px;
+    width: 200px;
+
+}
+
+.proj hr{
+    border:none;
+    height: 20px;
+    width: 90%;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid #46454471;
+    box-shadow: 0 20px 20px -20px rgba(51, 51, 51, 0.555);
+    margin: -50px auto 10px; 
+}
+/* end of proj section */
+
+
+/*
+*
+* 
+SECTION 2 css code 
+*/
+.section-2 {
+    display: flex;
+    margin: 0;
+    padding: 1em;
+}
+
+.section-2 p{
+    padding-bottom: 5px;
+}
+
+.courses-container {
+    flex: 3;
+}
+.skill-container {
+    flex: 2;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+ol li{
+    /* font-size: 200px; */
+    /* background-color: burlywood; */
+    /* margin: 0; */
+    position: relative;
+    list-style: none;
+    padding-top: 5px;;
+    margin: 20px 0;
+    font-weight: 500;
+    /* text-transform: uppercase; */
+}
+
+
+ol li:before{
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: rgba(22, 96, 139, .5);
+    border-radius: 1000px;
+    margin-bottom: 20px;
+}
+
+ol li:after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 0%;
+    height: 10px;
+    background-color: rgba(22, 96, 139, 1);
+    border-radius: 1000px;
+    margin-bottom: 20px;
+    animation-duration: .9s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+ol li.cpp::after{
+    animation-name: cpp;
+}
+@keyframes cpp {
+    to {
+        width: 80%;
+    }
+}
+
+ol li.py::after{
+    animation-name: py;
+}
+@keyframes py {
+    to {
+        width: 65%;
+    }
+}
+
+ol li.html::after{
+    animation-name: html;
+}
+@keyframes html {
+    to {
+        width: 45%;
+    }
+}
+
+/* end of section-2 css code*/
+p {
+    /* background-color : #cfc; */
+    padding : 0;
+    margin : 0;
+    line-height : 20px;
+}
+
+.headshot {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.resume-container .courses {
+    background-color: white;
+    color: black;
+    padding: 1em;
+}
+/* experience-timeline section*/
+.experience-timeline {
+    display: flex;
+    flex-basis: 0;
+    margin: 30px auto;
+    width: 100%;
+    border-bottom: 2px solid rgba(22, 96, 139, .7);
+    padding: 0 px 0 30px;
+}
+
+
+.experience-timeline div{
+    background-color: rgba(211, 211, 211, 0.3);
+    padding-left: 10px;
+    padding-right: 10px;
+    color: rgba(0, 0, 0, 0.651);
+
+    font-size: 16px;
+    border-left: 30px solid white;
+    line-height: 1;
+    position: relative;
+    height: 55px;
+    margin-bottom: 20px;
+}
+
+.experience-timeline div::before{
+    content: "";
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color:white;
+    border: 3px solid rgba(22, 96, 139);
+    position: absolute;
+    /* top: 2px; */
+    bottom: -27px;
+}
+
+.experience-timeline div::after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: rgba(22, 96, 139, .6) transparent transparent transparent;
+    border-width: 8px;
+    position: absolute;
+    /* left:-17px; */
+    bottom: -15px;
+
+}
+
+.exp-item{
+    flex: 1;
+}
+
+h2{
+    font-size: 12px;
+}
+h4{
+    font: 6px;
+}
+

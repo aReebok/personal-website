@@ -1,0 +1,38 @@
+Areeba Khan
+khan6@stolaf.edu 
+314 745 9208
+St. Louis, MO. 63105
+
+Education
+St. Olaf College, Northfield, MN -- BA in CS
+Concentrations: Neuroscience
+GPA:--
+Expected Graduation Date: May 2023 
+
+Clayton High School, St. Louis, MO - High School Diploma  (2019)
+GPA: 4.10/4.30
+
+CS Courses:
+St. Olaf College: Software Design, Hardware Design, Parallel & Distributed Computing. Ethical Issues in Software Design, Mobile Computing Applications, Abstract Algebra, Linear Algebra, Mobile Computing Applications (in progress), Ethics in Software Design (in progress). 
+Carleton College: Data Structures, Mathematics of Computer Science, Programming Languages: Design/Implementation.
+
+Experience
+Cluster Manager at St. Olaf College (Fall 2021-present)
+Work on research projects assigned to our team to complete them by given deadlines
+Attend weekly meetings and be able to work at least 5 hours per week towards cluster/server management
+Code in Place -- Stanford University’s remote introductory Python course volunteer program during the COVID-19 pandemic
+Section Leader (Summer 2020, 2021)
+Prepared and taught a weekly section of 10-12 diverse college students to supplement professors’ lectures in a 5-week introductory online Python programming course based on material from the first half of Stanford’s introductory programming course, CS106A. 
+Section Leader Mentor (Summer 2021)
+Led two 3-hour-long training sessions for new volunteer section leaders, covering methods of remote CS teachings, of maintaining personal and the student’s privacy, discussing course material timeline, and section leader responsibilities (?).
+Microsoft TEALS -- Teacher and TA at Oakes High School (Academic year 2021-22)
+Attending daily classes as TA and teaching TEALS’ curriculum. 
+Created 3 autograder 
+
+Leadership 
+Linux ladies board member and financial manager
+Summer program 
+CC  tutoring club  (president)
+High School Robotics Coding team co-captain 
+Volunteer network first-year representative
+

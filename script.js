@@ -1,3 +1,27 @@
+const modal = document.getElementById("myModal");
+const modalImage = document.getElementById("modalImage");
+const modalDescription = document.getElementById("modalDescription");
+
+const openModalImages = document.querySelectorAll(".openModalImg");
+
+openModalImages.forEach(image => {
+  image.addEventListener("click", function() {
+    const imgSrc = this.getAttribute("data-img");
+    const desc = this.getAttribute("data-desc");
+    
+    modalImage.src = imgSrc;
+    modalDescription.textContent = desc;
+    modal.style.display = "block";
+  });
+});
+
+document.querySelector(".close").addEventListener("click", function() {
+  modal.style.display = "none";
+});
+
+
+// modal logic:
+
 // Citation: https://css-tricks.com/snippets/css/typewriter-effect/
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
@@ -55,3 +79,5 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
+
+

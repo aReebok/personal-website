@@ -1,3 +1,4 @@
+
 const modal = document.getElementById("myModal");
 const modalImage = document.getElementById("modalImage");
 const modalDescription = document.getElementById("modalDescription");
@@ -81,3 +82,54 @@ window.onload = function() {
 };
 
 
+
+
+
+const data = [
+  {
+    img: "res/img/MOSAIC.png",
+    desc: "Mosaic-fyer (python, numpy)",
+    link: "https://github.com/aReebok/mosaifyer"
+  },
+  {
+    img: "res/img/my-doodle.jpg",
+    desc: "Description 2",
+    link: "https://github.com/project2"
+  },
+  {
+    img: "res/img/my-doodle.jpg",
+    desc: "Description 3",
+    link: "https://github.com/aReebok/scheme-interepreter-in-c"
+  },
+  {
+    img: "res/img/my-doodle.jpg",
+    desc: "Description 4",
+    link: "https://github.com/project1"
+  },
+  {
+    img: "res/img/my-doodle.jpg",
+    desc: "Description 5",
+    link: "https://github.com/project2"
+  },
+  {
+    img: "res/img/my-doodle.jpg",
+    desc: "Description 6",
+    link: "https://github.com/project3"
+  }
+];
+
+openModalImages.forEach((image, index) => {
+  image.addEventListener("click", function() {
+    const imgSrc = data[index].img;
+    const desc = data[index].desc;
+    const link = data[index].link;
+
+    modalImage.src = imgSrc;
+    modalDescription.innerHTML = `<p>${desc} | <a href="${link}" target="_blank">GitHub</a></p> `;
+    modal.style.display = "block";
+  });
+});
+
+document.querySelector(".close").addEventListener("click", function() {
+  modal.style.display = "none";
+});

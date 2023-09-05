@@ -7,8 +7,8 @@ const openModalImages = document.querySelectorAll(".openModalImg");
 
 openModalImages.forEach(image => {
   image.addEventListener("click", function() {
-    const imgSrc = this.getAttribute("data-img");
     const desc = this.getAttribute("data-desc");
+    const imgSrc = this.getAttribute("data-img");
     
     modalImage.src = imgSrc;
     modalDescription.textContent = desc;
@@ -68,8 +68,8 @@ TxtType.prototype.tick = function() {
 window.onload = function() {
     var elements = document.getElementsByClassName('typewrite');
     for (var i=0; i<elements.length; i++) {
-        var toRotate = elements[i].getAttribute('data-type');
-        var period = elements[i].getAttribute('data-period');
+      var period = elements[i].getAttribute('data-period');
+      var toRotate = elements[i].getAttribute('data-type');
         if (toRotate) {
           new TxtType(elements[i], JSON.parse(toRotate), period);
         }
@@ -92,13 +92,13 @@ const data = [
     link: "https://github.com/aReebok/mosaifyer"
   },
   {
-    img: "res/img/my-doodle.jpg",
-    desc: "Description 2",
-    link: "https://github.com/project2"
+    img: "res/demo/bp_demo.gif",
+    desc: "AWS Textract GUI",
+    link: "https://gist.github.com/aReebok/0736d2f89dd3fe044db8ecbba6fc3449"
   },
   {
-    img: "res/img/my-doodle.jpg",
-    desc: "Description 3",
+    img: "res/img/scm-gif.gif",
+    desc: "C Lang interpreter for Scheme",
     link: "https://github.com/aReebok/scheme-interepreter-in-c"
   },
   {
@@ -120,12 +120,12 @@ const data = [
 
 openModalImages.forEach((image, index) => {
   image.addEventListener("click", function() {
-    const imgSrc = data[index].img;
     const desc = data[index].desc;
     const link = data[index].link;
+    const imgSrc = data[index].img;
 
+    modalDescription.innerHTML = `<p>${desc}  |   <a href="${link}" target="_blank">GitHub</a></p> `;
     modalImage.src = imgSrc;
-    modalDescription.innerHTML = `<p>${desc} | <a href="${link}" target="_blank">GitHub</a></p> `;
     modal.style.display = "block";
   });
 });

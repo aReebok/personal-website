@@ -81,10 +81,6 @@ window.onload = function() {
     document.body.appendChild(css);
 };
 
-
-
-
-
 const data = [
   {
     img: "res/img/MOSAIC.png",
